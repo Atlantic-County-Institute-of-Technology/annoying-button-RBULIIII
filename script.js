@@ -24,9 +24,13 @@ text.innerHTML = "HEY CUTT IT OUTT!!";
             }
     else  if( clicks == 15 ) {
         text.innerHTML = "YOU ARE STARTING TO MAKE ME MAD";
+        button1.classList.add("angry");
+        button1.classList.add("mainDiv");
             }
     else  if( clicks == 20 ) {
         text.innerHTML = "If you stop I'll give you a reward";
+        button1.classList.remove("angry");
+        button1.classList.remove("mainDiv");
             }
     else  if( clicks == 25 ) {
         text.innerHTML = "Okay... catch me if you can.";
