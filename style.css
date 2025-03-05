@@ -1,15 +1,10 @@
-@keyframes back-and-forth{
-  0%, 5%, 95%, 100%{
-    left:0%;
-    transform: translate(0,0);
-  }
-}
+
 
 body {
   background-image: url("backrooms.jpg");
 }
 
-#button1 {
+.button1 {
     height: 150px;
     width: 150px;
     background-color: red;
@@ -30,50 +25,17 @@ body {
       animation: 5s back-and-forth ease-in-out infinite;
     }
 
-    .mainDiv{
-        position: relative;
-        width: 206px;
-        height: 190px;
-        margin: 0px auto;
-        margin-top:100px;
-        top: 430px;
-        z-index: -1;
-        left: 15px;
-        animation: 5s back-and-forth ease-in-out infinite;
-      }
-      .square{
-        width:100px;
-        height:100px;
-        background:tan;
-        border:solid 2px #FFF;
-        transform: skew(180deg,210deg);
-        position: absolute;
-        top: 43px;
-        box-shadow: 0px 10px 51px black;
-      }
-      .square2{
-        width:100px;
-        height:100px;
-        background:tan;
-        border:solid 2px #FFF;
-        transform: skew(180deg,150deg);
-        position: absolute;
-        left:102px;
-        top: 43px;
-        box-shadow: 0px 10px 51px black;
-      }
-      .square3{
-        width:114px;
-        height:100px;
-        background:tan;
-        border:solid 2px #FFF;
-        box-shadow: 0px 10px 51px black;
-      transform: rotate(150deg) translate(-40px, -16px) skew(30deg, 0deg);
-        position: absolute;
-        left: 0px;
-        top: -32px;
-      }
+    .button2{
+      background-color: green;
+      left:750px;
+      box-shadow: 0px 10px 51px green;
+    }
 
+    .container{
+      border-radius: 2px;
+    }
+
+  
       #button1:hover{
           text-decoration: underline;
       }
@@ -82,4 +44,30 @@ body {
         position: absolute;
         top:350px;
         left:800px;
+      }
+
+      
+      .movement{
+        top:503px;
+        left:390px;
+      }
+
+      .movement2{
+        top:100px;
+        left:208x;
+      }
+
+      .movement3{
+        top:700px;
+        left:670px;
+      }
+
+      .movement4{
+        top:400px;
+        left:134px;
+      }
+
+      .movement5{
+        top:600px;
+        left:210px;
       }
