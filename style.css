@@ -1,7 +1,19 @@
 
+@keyframes glitch {
+  from  {
+    transform: rotate(0deg) translateX(10.8px) rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg) translateX(900px) rotate(-360px);
+  }
+}
 
 body {
   background-image: url("backrooms.jpg");
+}
+
+.glitch{
+  animation: glitch 0.0001s linear infinite;
 }
 
 .button1 {

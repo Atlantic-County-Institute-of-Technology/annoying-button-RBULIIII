@@ -1,6 +1,7 @@
 let text = document.getElementById("text")
 let button1 = document.getElementById("button1")
-
+/*let sound = new Audio('assests/sound.mp3')*/
+let sigma = new Audio('assests/sigma.mp3')
 
 button1.addEventListener("click" , annoy);
 
@@ -12,6 +13,7 @@ function yell_at_user() {
 let clicks= 0;
 
 function annoy (){
+    sigma.play();
     clicks ++;
     console.log(clicks)
     if( clicks == 1 ) {
@@ -74,4 +76,8 @@ text.innerHTML = "HEY CUTT IT OUTT!!";
         button2.classList.add ("button2")
         container.appendChild(button2);
 }
+    else if(clicks == 50){
+        button1.classList.add ("glitch")
+    }
+
 }
