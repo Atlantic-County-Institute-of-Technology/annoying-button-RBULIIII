@@ -1,10 +1,28 @@
 
 @keyframes glitch {
   from  {
-    transform: rotate(0deg) translateX(10.8px) rotate(0deg);
+    transform: rotate(1000deg) translateX(868px) rotate(50deg);
   }
   to{
-    transform: rotate(360deg) translateX(900px) rotate(-360px);
+    transform: rotate(360deg) translateX(506px) rotate(-360px);
+  }
+}
+
+@keyframes ultimate {
+  from  {
+    transform: rotate(100deg) translateX(867px) rotate(590deg);
+  }
+  to{
+    transform: rotate(340deg) translateX(216px) rotate(760px);
+  }
+}
+
+@keyframes dfc {
+  from  {
+    transform: rotate(1000deg) translateX(868px) rotate(50deg);
+  }
+  to{
+    transform: rotate(360deg) translateX(506px) rotate(-360px);
   }
 }
 
@@ -12,10 +30,16 @@ body {
   background-image: url("backrooms.jpg");
 }
 
-.glitch{
-  animation: glitch 0.0001s linear infinite;
+.ultimate{
+animation: ultimate 8s linear infinite;
 }
 
+.glitch{
+  animation: glitch 8s linear infinite;
+}
+.dfc:hover{
+  
+}
 .button1 {
     height: 150px;
     width: 150px;
