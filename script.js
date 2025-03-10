@@ -1,6 +1,7 @@
-let text = document.getElementById("text")
-let button1 = document.getElementById("button1")
-let mouse = new Audio('assests/mouse.mp3')
+let text = document.getElementById("text");
+let button1 = document.getElementById("button1");
+const button2 = document.createElement("button");
+let mouse = new Audio('assests/mouse.mp3');
 
 button1.addEventListener("click" , annoy);
 
@@ -75,10 +76,10 @@ text.innerHTML = "HEY CUTT IT OUTT!!";
         button1.classList.remove("glitch");
     }
     else if(clicks == 50){ button1.classList.remove("glitch"); 
-    text.innerHTML = "OKAY FINE PRESS HIM THEN"; const button2 = document.createElement("button"); 
+    text.innerHTML = "OKAY FINE PRESS HIM THEN";
     button2.innerHTML = "PRESS MEEEEEE"; 
-    button2.classList.add("button1"); 
     button2.classList.add ("button2"); 
+    button2.classList.add ("visib");
     container.appendChild(button2); 
     } 
 
@@ -87,7 +88,8 @@ text.innerHTML = "HEY CUTT IT OUTT!!";
     }
 
     else  if( clicks == 70) { 
-        text.innerHTML = "IF YOU HAVENT FIGURED IT OUT BY NOW THE GREEN BUTTON DOES NOTHING LOL"; 
+        text.innerHTML = "IF YOU HAVENT FIGURED IT OUT BY NOW THE GREEN BUTTON DOES NOTHING LOL";
+        button2.classList.remove ("visib");
     }
 
     else  if( clicks == 76) { 
@@ -96,6 +98,7 @@ text.innerHTML = "HEY CUTT IT OUTT!!";
 
     else if(clicks == 100 ){
         text.innerHTML = "ALRIGHT YOU MADE ME DO THIS MUAHAHHA >:)";
-        
+        button1.classList.add ("ultimate")   
     }
+
 }
